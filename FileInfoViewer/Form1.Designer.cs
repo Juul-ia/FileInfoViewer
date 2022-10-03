@@ -29,13 +29,34 @@ namespace FileInfoViewer
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.loadButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // loadButton
+            // 
+            this.loadButton.Location = new System.Drawing.Point(52, 39);
+            this.loadButton.Name = "loadButton";
+            this.loadButton.Size = new System.Drawing.Size(152, 23);
+            this.loadButton.TabIndex = 0;
+            this.loadButton.Text = "Загрузить изображение";
+            this.loadButton.UseVisualStyleBackColor = true;
+            this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.loadButton);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button loadButton;
     }
 }
 
