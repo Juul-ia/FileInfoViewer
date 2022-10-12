@@ -32,5 +32,42 @@ namespace FileInfoViewer
                 }
             }
         }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            LoadImageInfos();
+            ImageInfo imgInfo = imageInfos.Find(i => i.Extension.ToLower() == ".bmp");
+            if (imgInfo != null)
+            {
+                lblBmpName.Text = imgInfo.Name;
+                lblBmpSize.Text = imgInfo.Length.ToString();
+                lblBmpRect.Text = imgInfo.Width.ToString()+"*"+ imgInfo.Height.ToString();
+                lblBmpColors.Text = imgInfo.ColorDepth.ToString();
+            }
+            imgInfo = imageInfos.Find(i => i.Extension.ToLower() == ".png");
+            if (imgInfo != null)
+            {
+                lblPngName.Text = imgInfo.Name;
+                lblPngSize.Text = imgInfo.Length.ToString();
+                lblPngRect.Text = imgInfo.Width.ToString() + "*" + imgInfo.Height.ToString();
+                lblPngColors.Text = imgInfo.ColorDepth.ToString();
+            }
+            imgInfo = imageInfos.Find(i => i.Extension.ToLower() == ".jpg");
+            if (imgInfo != null)
+            {
+                lblJpgName.Text = imgInfo.Name;
+                lblJpgSize.Text = imgInfo.Length.ToString();
+                lblJpgRect.Text = imgInfo.Width.ToString() + "*" + imgInfo.Height.ToString();
+                lblJpgColors.Text = imgInfo.ColorDepth.ToString();
+            }
+            imgInfo = imageInfos.Find(i => i.Extension.ToLower() == ".gif");
+            if (imgInfo != null)
+            {
+                lblGifName.Text = imgInfo.Name;
+                lblGifSize.Text = imgInfo.Length.ToString();
+                lblGifRect.Text = imgInfo.Width.ToString() + "*" + imgInfo.Height.ToString();
+                lblGifColors.Text = imgInfo.ColorDepth.ToString();
+            }
+        }
     }
 }
