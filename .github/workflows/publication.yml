@@ -38,7 +38,7 @@ jobs:
     - name: Delete old release
       uses: larryjoelane/delete-release-action@v1.0.24
       with:
-        release-name: text-analysis-app
+        release-name: FileInfoViewer-app
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create new release
