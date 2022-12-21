@@ -11,7 +11,7 @@ namespace FileInfoViewerTest
         {
             string Pictures = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName + "\\Pictures";
             string OnePict = Pictures + "\\Девушка.jpg";
-            List < ImageInfo > Info = new ImageLoader().LoadImageInfo(new List<string>() { OnePict });
+            List<ImageInfo> Info = new ImageLoader().LoadImageInfo(new List<string>() { OnePict });
             Assert.AreEqual(1, Info.Count);
             ImageInfo imageInfo = Info[0];
             Assert.IsNotNull(imageInfo);
@@ -70,4 +70,5 @@ namespace FileInfoViewerTest
             Assert.AreEqual(1000, imageInfo.Height);
             Assert.AreEqual(24, imageInfo.ColorDepth);
         }
+    }
 }
