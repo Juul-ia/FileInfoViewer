@@ -10,12 +10,12 @@ namespace FileInfoViewerTest
         public void Test1()
         {
             string Pictures = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName + "\\Pictures";
-            string OnePict = Pictures + "\\ƒÂ‚Û¯Í‡.jpg";
+            string OnePict = Pictures + "\\–î–µ–≤—É—à–∫–∞.jpg";
             List<ImageInfo> Info = new ImageLoader().LoadImageInfo(new List<string>() { OnePict });
             Assert.AreEqual(1, Info.Count);
             ImageInfo imageInfo = Info[0];
             Assert.IsNotNull(imageInfo);
-            Assert.AreEqual("ƒÂ‚Û¯Í‡.jpg", imageInfo.Name);
+            Assert.AreEqual("–î–µ–≤—É—à–∫–∞.jpg", imageInfo.Name);
             Assert.AreEqual(".jpg", imageInfo.Extension);
             Assert.AreEqual(362269, imageInfo.Length);
             Assert.AreEqual(1080, imageInfo.Width);
@@ -26,12 +26,12 @@ namespace FileInfoViewerTest
         public void Test2()
         {
             string Pictures = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName + "\\Pictures";
-            string TwoPict = Pictures + "\\ ÌË„‡.bmp";
+            string TwoPict = Pictures + "\\–ö–Ω–∏–≥–∞.bmp";
             List<ImageInfo> Info = new ImageLoader().LoadImageInfo(new List<string>() { TwoPict });
             Assert.AreEqual(1, Info.Count);
             ImageInfo imageInfo = Info[0];
             Assert.IsNotNull(imageInfo);
-            Assert.AreEqual(" ÌË„‡.bmp", imageInfo.Name);
+            Assert.AreEqual("–ö–Ω–∏–≥–∞.bmp", imageInfo.Name);
             Assert.AreEqual(".bmp", imageInfo.Extension);
             Assert.AreEqual(2412054, imageInfo.Length);
             Assert.AreEqual(804, imageInfo.Width);
@@ -42,12 +42,12 @@ namespace FileInfoViewerTest
         public void Test3()
         {
             string Pictures = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName + "\\Pictures";
-            string ThreePict = Pictures + "\\ÿ‡.gif";
+            string ThreePict = Pictures + "\\–®–∞—Ä.gif";
             List<ImageInfo> Info = new ImageLoader().LoadImageInfo(new List<string>() { ThreePict });
             Assert.AreEqual(1, Info.Count);
             ImageInfo imageInfo = Info[0];
             Assert.IsNotNull(imageInfo);
-            Assert.AreEqual("ÿ‡.gif", imageInfo.Name);
+            Assert.AreEqual("–®–∞—Ä.gif", imageInfo.Name);
             Assert.AreEqual(".gif", imageInfo.Extension);
             Assert.AreEqual(1877613, imageInfo.Length);
             Assert.AreEqual(600, imageInfo.Width);
@@ -58,12 +58,12 @@ namespace FileInfoViewerTest
         public void Test4()
         {
             string Pictures = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName + "\\Pictures";
-            string ThreePict = Pictures + "\\÷‚ÂÚ˚ Ë ÍÓÙÂ.png";
+            string ThreePict = Pictures + "\\–¶–≤–µ—Ç—ã –∏ –∫–æ—Ñ–µ.png";
             List<ImageInfo> Info = new ImageLoader().LoadImageInfo(new List<string>() { ThreePict });
             Assert.AreEqual(1, Info.Count);
             ImageInfo imageInfo = Info[0];
             Assert.IsNotNull(imageInfo);
-            Assert.AreEqual("÷‚ÂÚ˚ Ë ÍÓÙÂ.png", imageInfo.Name);
+            Assert.AreEqual("–¶–≤–µ—Ç—ã –∏ –∫–æ—Ñ–µ.png", imageInfo.Name);
             Assert.AreEqual(".png", imageInfo.Extension);
             Assert.AreEqual(1469995, imageInfo.Length);
             Assert.AreEqual(804, imageInfo.Width);
