@@ -1,6 +1,6 @@
 ﻿namespace FileInfoViewer
 {
-    internal class ImageInfo
+    public class ImageInfo
     {
         public string Name { get; set; }
         public string Extension { get; set; }

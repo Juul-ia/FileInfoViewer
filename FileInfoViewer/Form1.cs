@@ -22,7 +22,7 @@ namespace FileInfoViewer
             {
                 try
                 {
-                    List<ImageInfo> infos = new ImageLoader().LoadImageInfos(new List<string>(dialog.FileNames));
+                    List<ImageInfo> infos = new ImageLoader().LoadImageInfo(new List<string>(dialog.FileNames));
                     imageInfos.Clear();
                     imageInfos.AddRange(infos);
                 }

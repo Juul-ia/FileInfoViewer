@@ -4,9 +4,9 @@ using System.IO;
 
 namespace FileInfoViewer
 {
-    internal class ImageLoader
+    public class ImageLoader
     {
-        public List<ImageInfo> LoadImageInfos(List<string> paths)
+        public List<ImageInfo> LoadImageInfo(List<string> paths)
         {
             List<ImageInfo> result = new List<ImageInfo>();
             foreach (string path in paths)
