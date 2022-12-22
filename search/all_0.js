@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dispose_0',['Dispose',['../classFileInfoViewer_1_1Form1.html#a00de56948f777b28353797cf8bdbeb00',1,'FileInfoViewer::Form1']]]
+  ['colordepth_0',['ColorDepth',['../classFileInfoViewer_1_1ImageInfo.html#a4191b810eb4ab7c0506a78f7ad646d5d',1,'FileInfoViewer::ImageInfo']]]
 ];

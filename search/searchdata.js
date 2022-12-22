@@ -1,9 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "dfi",
+  0: "cdefhilnw",
   1: "fi",
   2: "f",
-  3: "d"
+  3: "dl",
+  4: "cehlnw"
 };
 
 var indexSectionNames =
@@ -11,7 +12,8 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "functions"
+  3: "functions",
+  4: "properties"
 };
 
 var indexSectionLabels =
@@ -19,6 +21,7 @@ var indexSectionLabels =
   0: "Указатель",
   1: "Классы",
   2: "Пространства имен",
-  3: "Функции"
+  3: "Функции",
+  4: "Свойства"
 };
 
