@@ -4,8 +4,16 @@ using System.IO;
 
 namespace FileInfoViewer
 {
+    /// <summary>
+    /// Осуществляет загрузку информации об изображениях
+    /// </summary>
     public class ImageLoader
     {
+        /// <summary>
+        /// Загружает информацию об изображениях
+        /// </summary>
+        /// <param name="paths">Список путей к файлам изображений</param>
+        /// <returns>Список с информацией об изображениях</returns>
         public List<ImageInfo> LoadImageInfo(List<string> paths)
         {
             List<ImageInfo> result = new List<ImageInfo>();
