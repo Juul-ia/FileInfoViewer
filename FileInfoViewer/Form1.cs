@@ -4,10 +4,16 @@ using System.Windows.Forms;
 
 namespace FileInfoViewer
 {
+    /// <summary>
+    /// Главная форма приложения
+    /// </summary>
     public partial class Form1 : Form
     {
         private List<ImageInfo> imageInfos = new List<ImageInfo>();
 
+        /// <summary>
+        /// Конструктор по умолчанию
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -32,7 +38,11 @@ namespace FileInfoViewer
                 }
             }
         }
-
+        /// <summary>
+        /// Обработчик события "нажатие на кнопку "Загрузить""
+        /// </summary>
+        /// <param name="sender">Отправитель события</param>
+        /// <param name="e">Аргументы события</param>
         private void button1_Click(object sender, System.EventArgs e)
         {
             LoadImageInfos();
