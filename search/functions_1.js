@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadimageinfo_17',['LoadImageInfo',['../classFileInfoViewer_1_1ImageLoader.html#a21af89cbf06a15f7d262bcc0da14ffb9',1,'FileInfoViewer::ImageLoader']]]
+  ['form1_17',['Form1',['../classFileInfoViewer_1_1Form1.html#a71fb737c9cfc140fbc68d1e8f8c5fc80',1,'FileInfoViewer::Form1']]]
 ];
